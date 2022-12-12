@@ -1,0 +1,62 @@
+[System]
+Name='PrevisioniMeteo'
+Type='mamdani'
+Version=2.0
+NumInputs=5
+NumOutputs=1
+NumRules=0
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Pressione(Hpa)'
+Range=[900 1100]
+NumMFs=3
+MF1='bassa':'trimf',[900 999 999]
+MF2='media':'trapmf',[1000 1000 1025 1025]
+MF3='alta':'trimf',[1026 1100 1100]
+
+[Input2]
+Name='Temperatura'
+Range=[-10 50]
+NumMFs=3
+MF1='mf1':'trimf',[-35 -10 15]
+MF2='mf2':'trimf',[-5 20 45]
+MF3='mf3':'trimf',[25 50 75]
+
+[Input3]
+Name='Prob_precipitazione'
+Range=[0 100]
+NumMFs=3
+MF1='mf1':'trimf',[-41.67 0 41.67]
+MF2='mf2':'trimf',[8.333 50 91.67]
+MF3='mf3':'trimf',[58.33 100 141.7]
+
+[Input4]
+Name='Umidità'
+Range=[0 100]
+NumMFs=3
+MF1='mf1':'trimf',[-41.67 0 41.67]
+MF2='mf2':'trimf',[8.333 50 91.67]
+MF3='mf3':'trimf',[58.33 100 141.7]
+
+[Input5]
+Name='Vento(km/h)'
+Range=[0 200]
+NumMFs=3
+MF1='mf1':'trimf',[-83.35 0 83.35]
+MF2='mf2':'trimf',[16.66 100 183.3]
+MF3='mf3':'trimf',[116.7 200 283.4]
+
+[Output1]
+Name='Previsione_meteo'
+Range=[0 1]
+NumMFs=3
+MF1='Pioggia':'trimf',[-0.416666666666667 0 0.416666666666667]
+MF2='Soleggiato':'trimf',[0.591 1.01 1.42]
+MF3='nuvoloso':'trimf',[0.0838096839959226 0.500509683995923 0.917509683995923]
+
+[Rules]
