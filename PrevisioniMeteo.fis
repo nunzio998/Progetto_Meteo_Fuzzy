@@ -15,48 +15,52 @@ DefuzzMethod='centroid'
 Name='Pressione(Hpa)'
 Range=[900 1100]
 NumMFs=3
-MF1='bassa':'trimf',[900 999 999]
-MF2='media':'trapmf',[1000 1000 1025 1025]
-MF3='alta':'trimf',[1026 1100 1100]
+MF1='bassa':'trimf',[900 900 1020]
+MF2='media':'trimf',[998 1012 1025]
+MF3='alta':'trimf',[1010 1100 1100]
 
 [Input2]
 Name='Temperatura'
-Range=[-10 50]
+Range=[-20 50]
 NumMFs=3
-MF1='mf1':'trimf',[-35 -10 15]
-MF2='mf2':'trimf',[-5 20 45]
-MF3='mf3':'trimf',[25 50 75]
+MF1='bassa':'trimf',[-20 -20 12]
+MF2='mite':'trimf',[4 15 28]
+MF3='alta':'trimf',[15 50 50]
 
 [Input3]
 Name='Prob_precipitazione'
 Range=[0 100]
 NumMFs=3
-MF1='mf1':'trimf',[-41.67 0 41.67]
-MF2='mf2':'trimf',[8.333 50 91.67]
-MF3='mf3':'trimf',[58.33 100 141.7]
+MF1='bassa':'trimf',[0 0 50]
+MF2='media':'trimf',[25 50 75]
+MF3='alta':'trimf',[50 100 100]
 
 [Input4]
 Name='Umidità'
 Range=[0 100]
 NumMFs=3
-MF1='mf1':'trimf',[-41.67 0 41.67]
-MF2='mf2':'trimf',[8.333 50 91.67]
-MF3='mf3':'trimf',[58.33 100 141.7]
+MF1='bassa':'trimf',[0 0 50]
+MF2='media':'trimf',[40 55 70]
+MF3='alta':'trimf',[60 100 100]
 
 [Input5]
 Name='Vento(km/h)'
 Range=[0 200]
-NumMFs=3
-MF1='mf1':'trimf',[-83.35 0 83.35]
-MF2='mf2':'trimf',[16.66 100 183.3]
-MF3='mf3':'trimf',[116.7 200 283.4]
+NumMFs=4
+MF1='Lieve':'trimf',[0 0 30]
+MF2='Medio':'trimf',[20 35 70]
+MF3='Forte':'trimf',[50 100 150]
+MF4='Molto_Forte':'trimf',[120 200 200]
 
 [Output1]
 Name='Previsione_meteo'
-Range=[0 1]
-NumMFs=3
-MF1='Pioggia':'trimf',[-0.416666666666667 0 0.416666666666667]
-MF2='Soleggiato':'trimf',[0.591 1.01 1.42]
-MF3='nuvoloso':'trimf',[0.0838096839959226 0.500509683995923 0.917509683995923]
+Range=[0 100]
+NumMFs=6
+MF1='Pioggia':'trimf',[-41.67 0 41.67]
+MF2='Sole':'trimf',[59.1 101 142]
+MF3='nuvoloso':'trimf',[8.381 50.05 91.75]
+MF4='Neve':'trimf',[14.51 64.51 114.5]
+MF5='ventoso':'trimf',[0 20 100]
+MF6='Umido':'trimf',[-13.46 36.54 86.54]
 
 [Rules]
