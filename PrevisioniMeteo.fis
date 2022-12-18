@@ -13,44 +13,44 @@ DefuzzMethod='centroid'
 
 [Input1]
 Name='Pressione(Hpa)'
-Range=[900 1100]
+Range=[970 1045]
 NumMFs=3
-MF1='bassa':'trimf',[900 900 1020]
-MF2='media':'trimf',[998 1012 1025]
-MF3='alta':'trimf',[1010 1100 1100]
+MF1='bassa':'trimf',[970 970 1013]
+MF2='media':'trimf',[1000 1013 1025]
+MF3='alta':'trimf',[1013 1045 1045]
 
 [Input2]
 Name='Temperatura'
-Range=[-20 50]
+Range=[-10 40]
 NumMFs=3
-MF1='bassa':'trimf',[-20 -20 12]
-MF2='mite':'trimf',[4 15 28]
-MF3='alta':'trimf',[15 50 50]
+MF1='bassa':'trimf',[-10 -10 15]
+MF2='mite':'trimf',[4.286 15 25.71]
+MF3='alta':'trimf',[15 40 40]
 
 [Input3]
 Name='Prob_precipitazione'
 Range=[0 100]
 NumMFs=3
-MF1='bassa':'trimf',[0 0 50]
-MF2='media':'trimf',[25 50 75]
-MF3='alta':'trimf',[50 100 100]
+MF1='bassa':'trimf',[0 0 66]
+MF2='media':'trimf',[15 50 85]
+MF3='alta':'trimf',[33 100 100]
 
 [Input4]
 Name='Umidità'
 Range=[0 100]
 NumMFs=3
-MF1='bassa':'trimf',[0 0 50]
-MF2='media':'trimf',[40 55 70]
+MF1='bassa':'trimf',[0 0 79]
+MF2='media':'trimf',[40 72 80]
 MF3='alta':'trimf',[60 100 100]
 
 [Input5]
 Name='Vento(km/h)'
-Range=[0 200]
+Range=[0 120]
 NumMFs=4
-MF1='Lieve':'trimf',[0 0 30]
-MF2='Medio':'trimf',[20 35 70]
-MF3='Forte':'trimf',[50 100 150]
-MF4='Molto_Forte':'trimf',[120 200 200]
+MF1='Lieve':'trimf',[0 0 18]
+MF2='Medio':'trimf',[4 21 60]
+MF3='Forte':'trimf',[21 60 90]
+MF4='Molto_Forte':'trimf',[60 120 120]
 
 [Output1]
 Name='Previsione_meteo'
