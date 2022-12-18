@@ -23,10 +23,10 @@
     _https://www.meteotorre.it/record.php_
     
 ## Regole
-- Se il barometro segna valori sotto 1000 hPa è probabile che il tempo volga al brutto, specie con umidità oltre 70% e venti meridionali. 
+- Se il barometro segna valori sotto 1000 hPa è probabile che il tempo volga al brutto, specie con umidità oltre 70%.
 
   _https://www.meteogiuliacci.it/curiosit%C3%A0/record-storici-incredibili-di-alta-pressione-italia-e-europa_
-- Se il barometro segna valori oltre 1025 hPa,  il tempo tende al bello, specie con umidità sotto al 60% e venti settentrionali.
+- Se il barometro segna valori oltre 1025 hPa,  il tempo tende al bello, specie con umidità sotto al 60%.
 
     _https://www.meteogiuliacci.it/curiosit%C3%A0/record-storici-incredibili-di-alta-pressione-italia-e-europa_
 
