@@ -55,12 +55,10 @@ MF4='Molto_Forte':'trimf',[60 120 120]
 [Output1]
 Name='Previsione_meteo'
 Range=[0 100]
-NumMFs=6
-MF1='Pioggia':'trimf',[-41.67 0 41.67]
-MF2='Sole':'trimf',[59.1 101 142]
-MF3='nuvoloso':'trimf',[8.381 50.05 91.75]
-MF4='Neve':'trimf',[14.51 64.51 114.5]
-MF5='ventoso':'trimf',[0 20 100]
-MF6='Umido':'trimf',[-13.46 36.54 86.54]
+NumMFs=4
+MF1='Temporale':'trimf',[-33.33 4.441e-16 33.33]
+MF2='Pioggia':'trimf',[0 33.33 66.67]
+MF3='Nuvoloso':'trimf',[33.33 66.67 100]
+MF4='Sereno':'trimf',[66.67 100 133.3]
 
 [Rules]
