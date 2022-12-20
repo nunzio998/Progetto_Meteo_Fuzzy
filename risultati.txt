@@ -2,3 +2,4 @@ Nel seguente file vengono riportati i risultati scaturiti dall'applicazione del 
 - Meteo Areonautica Militare Roma -> http://www.meteoam.it/ta/previsione/482/roma
 - IlMeteo -> https://www.ilmeteo.it
 - 3Bmeteo -> https://www.3bmeteo.com
+Le previsioni vengono effettuate ogni volta per il giorno successivo.
