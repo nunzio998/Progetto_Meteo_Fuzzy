@@ -1,0 +1,4 @@
+Nel seguente file vengono riportati i risultati scaturiti dall'applicazione del modello Fuzzy di previsione del meteo basandosi su valori ricavati da fonti affidabili e enti di previsione come: 
+- Meteo Areonautica Militare Roma -> http://www.meteoam.it/ta/previsione/482/roma
+- IlMeteo -> https://www.ilmeteo.it
+- 3Bmeteo -> https://www.3bmeteo.com
