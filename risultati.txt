@@ -3,3 +3,10 @@ Nel seguente file vengono riportati i risultati scaturiti dall'applicazione del 
 - IlMeteo -> https://www.ilmeteo.it
 - 3Bmeteo -> https://www.3bmeteo.com
 Le previsioni vengono effettuate ogni volta per il giorno successivo.
+
+
+Previsioni:
+1) 27/12/2022 per il 28/12/2022: 
+     [1026;13;0;80;4] = 70.5 (più nuvoloso che sereno)
+
+2)
