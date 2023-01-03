@@ -30,3 +30,31 @@
 
     _https://www.meteogiuliacci.it/curiosit%C3%A0/record-storici-incredibili-di-alta-pressione-italia-e-europa_
 
+
+Le regole che sono state inserite sono state derivate principalmente da
+quattro regole generali, ognuna delle quali si riferisce ad uno dei quattro 
+risultati possibili della previsione.
+
+- Temporale:
+[Pressione: bassa | Temperatura: bassa/media/alta | Probabilità_precipitazione: alta
+| Umidita: alta | Vento: forte/ molto_forte]
+
+- Pioggia:
+[Pressione: bassa/media | Temperatura: bassa/media/alta | Probabilità_precipitazione: media/alta
+| Umidita: media/alta | Vento: lieve/medio/forte]
+
+- Nuvoloso:
+[Pressione: bassa/media | Temperatura: bassa/media/alta | Probabilità_precipitazione: alta
+| Umidita: media/alta | Vento: lieve/medio/forte]
+
+che semplificata è:
+[Pressione: not(alta) | Temperatura: bassa/media/alta | Probabilità_precipitazione: not(bassa)
+| Umidita: not(bassa) | Vento: not(molto_forte)]
+
+- Sereno:
+[Pressione: bassa/media | Temperatura: bassa/media/alta | Probabilità_precipitazione: bassa
+| Umidita: bassa/media/alta | Vento: lieve/medio/forte/molto_forte]
+
+che semplificata:
+[Pressione: not(bassa) | Temperatura: bassa/media/alta | Probabilità_precipitazione: bassa
+| Umidita: bassa/media/alta | Vento: lieve/medio/forte/molto_forte]

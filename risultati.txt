@@ -1,11 +1,27 @@
-Nel seguente file vengono riportati i risultati scaturiti dall'applicazione del modello Fuzzy di previsione del meteo basandosi su valori ricavati da fonti affidabili e enti di previsione come: 
-- Meteo Areonautica Militare Roma -> http://www.meteoam.it/ta/previsione/482/roma
-- IlMeteo -> https://www.ilmeteo.it
-- 3Bmeteo -> https://www.3bmeteo.com
-Le previsioni vengono effettuate ogni volta per il giorno successivo.
+Le regole che sono state inserite sono state derivate principalmente da
+quattro regole generali, ognuna delle quali si riferisce ad uno dei quattro 
+risultati possibili della previsione.
 
+- Temporale:
+[Pressione: bassa | Temperatura: bassa/media/alta | Probabilità_precipitazione: alta
+| Umidita: alta | Vento: forte/ molto_forte]
 
-Previsioni (per il giorno successivo): Screen in cartella previsioni
-1) 27/12/2022 per il 28/12/2022
-	 [1026;14.4;0;50;3] = 86.7 (più sereno che nuvoloso) 
-	--> Tempo registrato:
+- Pioggia:
+[Pressione: bassa/media | Temperatura: bassa/media/alta | Probabilità_precipitazione: media/alta
+| Umidita: media/alta | Vento: lieve/medio/forte]
+
+- Nuvoloso:
+[Pressione: bassa/media | Temperatura: bassa/media/alta | Probabilità_precipitazione: alta
+| Umidita: media/alta | Vento: lieve/medio/forte]
+
+che semplificata è:
+[Pressione: not(alta) | Temperatura: bassa/media/alta | Probabilità_precipitazione: not(bassa)
+| Umidita: not(bassa) | Vento: not(molto_forte)]
+
+- Sereno:
+[Pressione: bassa/media | Temperatura: bassa/media/alta | Probabilità_precipitazione: bassa
+| Umidita: bassa/media/alta | Vento: lieve/medio/forte/molto_forte]
+
+che semplificata:
+[Pressione: not(bassa) | Temperatura: bassa/media/alta | Probabilità_precipitazione: bassa
+| Umidita: bassa/media/alta | Vento: lieve/medio/forte/molto_forte]
